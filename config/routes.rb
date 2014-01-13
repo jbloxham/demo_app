@@ -1,4 +1,5 @@
 DemoApp::Application.routes.draw do
+  get "static_pages/home"
   resources :microposts
 
   resources :users
@@ -58,6 +59,6 @@ DemoApp::Application.routes.draw do
   #     resources :products
   #   end
 
-  root :to => "users#index"
+  root :to => "static_pages#home"
 
 end
